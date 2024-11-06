@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento de Serviços</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Agende seu Horário</h1>
+    <form id="agendamentoForm" method="POST" action="agendar.php">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="servico">Serviço:</label>
+      <select id="servico" name="servico" required>
+        <option value="manicure">Manicure</option>
+        <option value="pedicure">Pedicure</option>
+        <option value="manicure_pedicure">Manicure e Pedicure</option>
+        <!-- Adicione outros serviços aqui -->
+      </select>
+
+      <label for="data_">Data:</label>
+      <input type="date" id="data_" name="data_" required>
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" name="hora" required>
+
+      <button type="submit">Agendar</button>
+    </form>
+  </div>
+</body>
+</html>
